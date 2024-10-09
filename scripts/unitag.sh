@@ -44,6 +44,11 @@ if [ $tag_mission == "difficulty" ] || [ $tag_mission == "all" ]; then
     input_file_dir=$(dirname $input_file)
     input_file_name_no_ext="${input_file_name%.*}"
     input_file_ext="${input_file_name##*.}"
+    #update:sm
+    #date:2024-10-09
+    #error: 현재 json파일로만 outputfile이 만들어지는데 all실행시 기존에 입력한 jsonl확장자를 그대로 따라가게 되어 에러 발생
+    if $tag_mission == "all":
+        input_file_ext="json" 
     difficulty_tag_file="${input_file_dir}/${input_file_name_no_ext}_difficulty.${input_file_ext}"
     input_file=$difficulty_tag_file
     echo "[magpie.sh] Difficulty Tagged File: $input_file"
@@ -67,6 +72,11 @@ if [ $tag_mission == "quality" ] || [ $tag_mission == "all" ]; then
     input_file_dir=$(dirname $input_file)
     input_file_name_no_ext="${input_file_name%.*}"
     input_file_ext="${input_file_name##*.}"
+    #update:sm
+    #date:2024-10-09
+    #error: 현재 json파일로만 outputfile이 만들어지는데 all실행시 기존에 입력한 jsonl확장자를 그대로 따라가게 되어 에러 발생
+    if $tag_mission == "all":
+        input_file_ext="json" 
     quality_tag_file="${input_file_dir}/${input_file_name_no_ext}_quality.${input_file_ext}"
     input_file=$quality_tag_file
     echo "[magpie.sh] Quality Tagged File: $input_file"
@@ -113,6 +123,11 @@ if [ $tag_mission == "safety" ] || [ $tag_mission == "all" ]; then
     input_file_dir=$(dirname $input_file)
     input_file_name_no_ext="${input_file_name%.*}"
     input_file_ext="${input_file_name##*.}"
+    #update:sm
+    #date:2024-10-09
+    #error: 현재 json파일로만 outputfile이 만들어지는데 all실행시 기존에 입력한 jsonl확장자를 그대로 따라가게 되어 에러 발생
+    if $tag_mission == "all":
+        input_file_ext="json" 
     safety_tag_file="${input_file_dir}/${input_file_name_no_ext}_safety.${input_file_ext}"
     input_file=$safety_tag_file
     echo "[magpie.sh] Safety Tagged File: $input_file"
@@ -135,6 +150,11 @@ if [ $tag_mission == "reward" ] || [ $tag_mission == "all" ]; then
     input_file_dir=$(dirname $input_file)
     input_file_name_no_ext="${input_file_name%.*}"
     input_file_ext="${input_file_name##*.}"
+    #update:sm
+    #date:2024-10-09
+    #error: 현재 json파일로만 outputfile이 만들어지는데 all실행시 기존에 입력한 jsonl확장자를 그대로 따라가게 되어 에러 발생
+    if $tag_mission == "all":
+        input_file_ext="json" 
     reward_tag_file="${input_file_dir}/${input_file_name_no_ext}_reward.${input_file_ext}"
     input_file=$reward_tag_file
     echo "[magpie.sh] Reward Tagged File: $input_file"
@@ -154,6 +174,11 @@ if [ $tag_mission == "language" ] || [ $tag_mission == "all" ]; then
     input_file_dir=$(dirname $input_file)
     input_file_name_no_ext="${input_file_name%.*}"
     input_file_ext="${input_file_name##*.}"
+    #update:sm
+    #date:2024-10-09
+    #error: 현재 json파일로만 outputfile이 만들어지는데 all실행시 기존에 입력한 jsonl확장자를 그대로 따라가게 되어 에러 발생
+    if $tag_mission == "all":
+        input_file_ext="json" 
     language_tag_file="${input_file_dir}/${input_file_name_no_ext}_language.${input_file_ext}"
     input_file=$language_tag_file
     echo "[magpie.sh] Language Tagged File: $input_file"
