@@ -1,0 +1,3 @@
+bash unitag.sh ../data/Meta-Llama-3-8B-Instruct_topp1_temp1_1728482834/Magpie_Meta-Llama-3-8B-Instruct_1000_1728482834_ins_res.json
+
+bash unitag.sh ../data/Meta-Llama-3-8B-Instruct_topp1_temp1_1728482834/test_ins_res_difficulty_quality_category.json safety 0
