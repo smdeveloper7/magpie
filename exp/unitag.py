@@ -250,6 +250,14 @@ def generate_and_update(dataset, mission, llm, params, api, rm_pipe, rm_pipe_kwa
 
 if __name__ == "__main__":
     input_file = args.input_file
+
+    #update:sm 
+    #date : 2024/10/09
+    input_ext = os.path.splitext(input_file)[1].lower()
+    
+    if input_ext not in ['.json', '.jsonl']:
+        raise ValueError("Input file must be either .json or .jsonl format.")
+
     # Mission Settings
     if mission == "difficulty":
         output_file = f"{input_file[:input_file.rfind('.')]}_difficulty.jsonl"
@@ -273,7 +281,13 @@ if __name__ == "__main__":
     else:
         raise ValueError("Invalid mission. Available missions: difficulty, quality, classification, safety, reward, language")
     # Change jsonl to json if args.save_as is json
-    if args.save_as == "json":
+    # if args.save_as == "json":
+    #     output_file = f"{output_file[:output_file.rfind('.')]}.json"
+    
+    #update:sm 
+    #date : 2024/10/09
+    #error: return only json
+    if input_ext == "json":
         output_file = f"{output_file[:output_file.rfind('.')]}.json"
 
     # Load dataset
