@@ -31,5 +31,5 @@ ipykernel
 
 # Utils
 lingua-language-detector
-faiss-gpu
+#faiss-gpu-cu11
 ml_collections
