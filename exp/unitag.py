@@ -281,19 +281,15 @@ if __name__ == "__main__":
     else:
         raise ValueError("Invalid mission. Available missions: difficulty, quality, classification, safety, reward, language")
     # Change jsonl to json if args.save_as is json
-    # if args.save_as == "json":
-    #     output_file = f"{output_file[:output_file.rfind('.')]}.json"
+    if args.save_as == "json":
+        output_file = f"{output_file[:output_file.rfind('.')]}.json"
     
     #update:sm 
     #date : 2024/10/09
     #error: return only json
-    
-    if input_ext == ".json":
-        print("json형태")
-        output_file = f"{output_file[:output_file.rfind('.')]}.json"
-    else:
-        print("다른형태",input_ext)
-        
+    # if input_ext == "json":
+    #     output_file = f"{output_file[:output_file.rfind('.')]}.json"
+
     # Load dataset
     if not args.debug:
         dataset = load_dataset_from_file(input_file)
