@@ -287,9 +287,13 @@ if __name__ == "__main__":
     #update:sm 
     #date : 2024/10/09
     #error: return only json
-    if input_ext == "json":
+    
+    if input_ext == ".json":
+        print("json형태")
         output_file = f"{output_file[:output_file.rfind('.')]}.json"
-
+    else:
+        print("다른형태",input_ext)
+        
     # Load dataset
     if not args.debug:
         dataset = load_dataset_from_file(input_file)
