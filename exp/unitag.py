@@ -252,11 +252,13 @@ if __name__ == "__main__":
     input_file = args.input_file
 
     #update:sm 
-    #date : 2024/10/09
+    #date:2024/10/09
+    #error:input_file의 확장자에 따라 저장하는 파일양식 수정
     input_ext = os.path.splitext(input_file)[1].lower()
-    
     if input_ext not in ['.json', '.jsonl']:
         raise ValueError("Input file must be either .json or .jsonl format.")
+    else:
+        args.save_as = input_ext[1:]
 
     # Mission Settings
     if mission == "difficulty":
