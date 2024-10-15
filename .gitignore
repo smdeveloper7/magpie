@@ -166,6 +166,7 @@ Magpie Data/
 data_po/
 data_gemma/
 data_llama3.1/
+dataset/
 dataset/data_curation.tar
 dataset/Linux - 바로 가기.lnk
 dataset/test_difficulty.json

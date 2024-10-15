@@ -159,4 +159,6 @@ if [ $tag_mission == "language" ] || [ $tag_mission == "all" ]; then
     echo "[magpie.sh] Language Tagged File: $input_file"
 fi
 
-echo "[magpie.sh] Finish Tagging Mission: $tag_mission"
+finish_time=$(date "+%Y-%m-%d %H:%M:%S")
+echo "[magpie.sh] Finish Tagging Mission: $tag_mission at $finish_time"
+
