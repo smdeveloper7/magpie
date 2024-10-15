@@ -166,3 +166,27 @@ Magpie Data/
 data_po/
 data_gemma/
 data_llama3.1/
+dataset/data_curation.tar
+dataset/Linux - 바로 가기.lnk
+dataset/test_difficulty.json
+dataset/test_difficulty.jsonl
+dataset/test2_difficulty_quality_category.json
+dataset/test2_difficulty_quality.json
+dataset/test2_difficulty.json
+dataset/test2.json
+dataset/test2.jsonl
+dataset/data_curation/Ko-Arc/03. Ko-Arc.csv
+dataset/data_curation/Ko-Arc/03. Ko-Arc.txt
+dataset/data_curation/Ko-Arc/Ko-Arc - 복사본.jsonlZone.Identifier
+dataset/data_curation/Ko-Arc/Ko-Arc.jsonl
+dataset/data_curation/Ko-Arc/Ko-Arc2_difficulty.json
+dataset/data_curation/Ko-Arc/Ko-Arc2.jsonl
+dataset/data_curation/Ko-CommonGen-V2/07. Ko-CommonGen-V2.csv
+dataset/data_curation/Ko-CommonGen-V2/07. Ko-CommonGen-V2.jsonl
+dataset/data_curation/Ko-CommonGen-V2/07. Ko-CommonGen-V2.txt
+dataset/data_curation/Ko-GSM8k/06. Ko-GSM8k.csv
+dataset/data_curation/Ko-GSM8k/06. Ko-GSM8k.jsonl
+dataset/data_curation/Ko-GSM8k/06. Ko-GSM8k.txt
+dataset/data_curation/Ko-Truthful-QA/04. Ko-Truthful-QA.csv
+dataset/data_curation/Ko-Truthful-QA/04. Ko-Truthful-QA.jsonl
+dataset/data_curation/Ko-Truthful-QA/04. Ko-Truthful-QA.txt
